@@ -6,7 +6,7 @@ The midterm project of Internet Engineering course.
 
 Page Link: [https://goli-mary-m.github.io/Github-Users-FrontEnd](https://goli-mary-m.github.io/Github-Users-FrontEnd/)
 
-By using this page, we can enter a Github username and see the following information for that user:
+By using this page, we can enter a Github username and see the following information about that user:
 
 - Profile image
 - Name
