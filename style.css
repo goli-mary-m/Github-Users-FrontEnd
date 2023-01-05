@@ -1,0 +1,124 @@
+/* set background image that covers the entire browser window */
+body {
+    background: url("./images/background.png") no-repeat center center fixed;
+    background-size: cover;
+}
+
+/* set type and size of font for all the elements in document */
+* {
+    font-size: 100%;
+    font-family: Cursive;
+}
+
+/* 
+    - content_div: a container for showing all the contents (request_div and response_div) 
+    - put this container in the center of browser window
+*/
+.content_div {
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    background-color: beige;
+    opacity: 0.8;
+    padding: 20px;
+    border-radius: 20px;
+    
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    justify-content: space-between;
+}
+
+/* --------------------------------- Response --------------------------------- */
+
+/* 
+    - response_div: a container for showing response items (data of user such as image, name, blog, ...) in left panel
+    - put all response items in a column and put a border around them
+
+*/
+.response_div {
+    position: relative;
+    margin-right: 20px;
+    padding: 20px;
+    border: 10px solid rgba(83, 83, 83, 0.125);
+    border-radius: 20px;
+
+    display: flex;
+    flex-direction: column;
+    align-items: stretch;
+    text-align: center;
+    justify-content: space-between;
+    row-gap: 0px;
+
+    display: none;
+}
+
+/* set size and padding for profile image of user */
+img {
+    width: 250px;
+    padding-bottom: 10px;
+}
+
+/* add an attribute to response_name for making name of user bold  */
+#response_name {
+    font-weight: bold;
+}
+
+/* add space between response items (name, blog, location, ...)  */
+.response_items {
+    flex-basis: 40px;
+} 
+
+/* put bio in a box and set some attributes for its text */
+#response_bio {
+    max-width: 200px;
+    align-self: center;
+    font-size: 90%;
+    position: relative;
+    padding: 10px;
+    border: 5px dashed rgba(0,0,0,.125);
+    border-radius: 5px;
+}
+
+/* set color for links (blog link) */
+a {
+    color: rgb(23, 9, 59);
+}
+
+/* --------------------------------- Request --------------------------------- */
+
+/* 
+    - request_div: a container for showing request form in right panel
+    - set a border around input box and submit button
+*/
+.request_div {
+    position: relative;
+    padding: 20px;
+    border: 10px solid rgba(0,0,0,.125);
+    border-radius: 20px;
+}
+
+/* set style for submit button */
+#submit_button {
+    width: 100%;
+    height: 30px;
+    text-align: center;
+    background-color:  rgb(23, 9, 59);
+    color: white;
+    border-radius: 10px;
+}
+
+/* add some attributes to error messages (userNotFoundError and networkError) and change their color to red */
+.error {
+    font-size: 90%;
+    color: crimson;
+    padding-bottom: 10px;
+}
+
+/* add some attributes to aditional info messages (localStorageMessage) and change its color to dark blue */
+.message {
+    font-size: 90%;
+    color: rgb(23, 9, 59);
+    padding-bottom: 10px;
+}

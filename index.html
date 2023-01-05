@@ -1,0 +1,43 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <meta charset="UTF-8">
+        <title>Github Users</title>
+        <meta name="description" content="showing data of github users">
+        <meta name="author" content="Maryam Goli">
+        <link rel="stylesheet" href="./style.css">
+        <link rel="icon" type="image/png" href="./images/icon.png" />
+    </head>
+
+    <body>
+
+        <div class="content_div">
+            <!-- left panel: response_div -->
+            <form>
+                <div class="response_div">
+                    <img src="" alt="User Profile" id="response_image">
+                    <label for="name" id="response_name" class="response_items"></label>
+                    <label for="blog" id="response_blog" class="response_items"></label>
+                    <label for="location" id="response_location" class="response_items"></label>
+                    <label for="favoriteLanguage" id="response_favoriteLanguage" class="response_items"></label>
+                    <div id="response_bio"></div>
+                </div>
+            </form>
+
+            
+            <!-- right panel: request_div -->
+            <form>
+                <div class="request_div">
+                    <p><label for="username">Username</label></p>
+                    <p><input type="text" id="username"></p>
+                    <p><button type="button" id="submit_button">Submit</button></p>
+                    <p><label for="userNotFoundError_message" id="userNotFoundError_message" class="error"></label></p>
+                    <p><label for="networkError_message" id="networkError_message" class="error"></label></p>
+                    <p><label for="localStorage_message" id="localStorage_message" class="message"></label></p>
+                </div>
+            </form>
+        </div>
+
+        <script src="./script.js"></script>
+    </body>
+</html>    
